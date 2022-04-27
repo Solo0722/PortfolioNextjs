@@ -1,8 +1,17 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Button, Tooltip } from "antd";
+import { Button, Tooltip, notification } from "antd";
 import { FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import Header from "../components/Header";
+
+const openNotification = (placement) => {
+  notification.info({
+    message: `Need a website?`,
+    description:
+      "You can contact me through my mobile number or email on the contact page. Call or Email and get your website made for you immediately",
+    placement,
+  });
+};
 
 export default function Home() {
   return (
@@ -23,7 +32,9 @@ export default function Home() {
                 Download Resume
               </a>
             </Button>
-            <Button type="ghost">Need a website?</Button>
+            <Button type="ghost" onClick={() => openNotification("topRight")}>
+              Need a website?
+            </Button>
           </div>
           <div className={styles.socialLinks}>
             <Tooltip title="facebook">

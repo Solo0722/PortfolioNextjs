@@ -1,11 +1,10 @@
 import styles from "../styles/NavbarStyles.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Button, Tooltip } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
 
 const Navbar = () => {
   const router = useRouter();
+
 
   // console.log(router.pathname);
 
