@@ -1,0 +1,52 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  height: calc(100vh - 70px);
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.contactInfo {
+  width: 50%;
+  animation: infoAnim 0.5s linear;
+}
+
+@keyframes infoAnim {
+  from {
+    /* top: -10%; */
+    transform: translateX(-500px);
+  }
+
+  to {
+    /* top: 0%; */
+    transform: translateX(0px);
+  }
+}
+
+.contactInfo h1 {
+  color: #1890ff;
+}
+
+.formContainer {
+  width: 50%;
+  animation: formAnim 0.5s linear;
+}
+
+@keyframes formAnim {
+  from {
+    /* top: -10%; */
+    transform: translateX(500px);
+  }
+
+  to {
+    /* top: 0%; */
+    transform: translateX(0px);
+  }
+}
