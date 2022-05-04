@@ -35,8 +35,8 @@ const About = () => {
             has 2+ years experience in web development.
           </p>
           <p>
-            Solomon considers himself a "forever student", eager to both build
-            on his developing skills and stay in tune with the latest
+            Solomon considers himself a &#34;forever student&#34;, eager to both
+            build on his developing skills and stay in tune with the latest
             technological advancement.
           </p>
           <div className={aboutStyles.skillsContainer}>
