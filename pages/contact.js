@@ -34,7 +34,7 @@ const Contact = () => {
     from_name: "",
     message: "",
     // reply_to: "",
-    from_email:"",
+    from_email: "",
   });
 
   const onSubmit = (e) => {
@@ -95,6 +95,7 @@ const Contact = () => {
           </div>
         </div>
         <div className={contactStyles.formContainer}>
+          <h2 className={contactStyles.emailHeader}>Email Me</h2>
           <Form
             // onSubmit={onSubmit}
             name="basic"

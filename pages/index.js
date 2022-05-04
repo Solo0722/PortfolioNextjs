@@ -8,7 +8,7 @@ const openNotification = (placement) => {
   notification.info({
     message: `Need a website?`,
     description:
-      "You can contact me through my mobile number or email on the contact page. Call or Email and get your website made for you immediately",
+      "You can contact me through my mobile number or email on the contact page to get your website done",
     placement,
   });
 };
@@ -22,7 +22,8 @@ export default function Home() {
         <div className={styles.description}>
           <p style={{ color: "ActiveCaption" }}>Hòla,</p>
           <h2>
-            I'm <span style={{ color: "#1890FF" }}>Solomon</span> Owusu-Ansah
+            I&#39;m <span style={{ color: "#1890FF" }}>Solomon</span>{" "}
+            Owusu-Ansah
           </h2>
           <h3>Full Stack Web Developer</h3>
 

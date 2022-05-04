@@ -33,6 +33,23 @@
   }
 }
 
+.list {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  flex-direction: column;
+}
+.list button,
+.list a {
+  width: 100%;
+  display: block;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1890ff;
+}
+
 .imgContainer {
 }
 
@@ -43,6 +60,10 @@
 .active {
   color: #1890ff;
   /* background-color: black; */
+}
+
+.menuButton {
+  display: none;
 }
 
 .navigationContainer li {
@@ -63,4 +84,13 @@
 
 .navigationContainer li:active {
   background-color: rgb(13, 13, 18);
+}
+
+@media screen and (max-width: 768px) {
+  .navigationContainer {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
 }

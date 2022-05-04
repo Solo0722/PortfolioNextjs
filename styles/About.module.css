@@ -12,10 +12,24 @@
   align-items: center;
 }
 
-.aboutInfo{
-
+.aboutInfo {
 }
 
-.aboutInfo h1{
+.aboutInfo h1 {
+  color: #1890ff;
+}
+
+.skillsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skillsContainer h2{
   color:#1890ff;
+}
+
+.skillsContainer button {
+  margin: 10px;
 }

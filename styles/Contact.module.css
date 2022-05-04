@@ -3,7 +3,7 @@
 }
 
 .main {
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
   padding: 2rem 0;
   flex: 1;
   display: flex;
@@ -39,6 +39,10 @@
   animation: formAnim 0.5s linear;
 }
 
+.emailHeader {
+  display: none;
+}
+
 @keyframes formAnim {
   from {
     /* top: -10%; */
@@ -48,5 +52,23 @@
   to {
     /* top: 0%; */
     transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactInfo {
+    width: 100%;
+  }
+  .formContainer {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .emailHeader {
+    display: flex;
+    color: #1890ff;
   }
 }

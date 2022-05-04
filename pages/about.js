@@ -1,6 +1,18 @@
 import React from "react";
 import Header from "../components/Header";
 import aboutStyles from "../styles/About.module.css";
+import { Button } from "antd";
+
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React JS",
+  "Next JS",
+  "Node JS",
+  "Python",
+  "React Native",
+];
 
 const About = () => {
   return (
@@ -21,7 +33,16 @@ const About = () => {
             tempora commodi deleniti repellendus.
           </p>
         </div>
-        <div className={aboutStyles.skillsContainer}></div>
+        <div className={aboutStyles.skillsContainer}>
+          <h2>Skills</h2>
+          <div>
+            {skills.map((skill, index) => (
+              <Button type="ghost" key={index}>
+                {skill}
+              </Button>
+            ))}
+          </div>
+        </div>
         <div className={aboutStyles.testimonialsContainer}></div>
       </main>
     </div>
