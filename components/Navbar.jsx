@@ -69,18 +69,52 @@ const Navbar = () => {
         width={"80%"}
       >
         <List className={styles.list}>
-          <Button type="text" href="/" onClick={onClose}>
-            Home
-          </Button>
-          <Button type="text" href="/about" onClick={onClose}>
-            About
-          </Button>
-          <Button type="text" href="/projects" onClick={onClose}>
-            Projects
-          </Button>
-          <Button type="text" href="/contact" onClick={onClose}>
-            Contact
-          </Button>
+          <List.Item className={styles.listItem}>
+            <Button
+              className={router.pathname == "/" ? styles.active : undefined}
+              type="text"
+              href="/"
+              onClick={onClose}
+            >
+              Home
+            </Button>
+          </List.Item>
+          <List.Item className={styles.listItem}>
+            <Button
+              className={
+                router.pathname == "/about" ? styles.active : undefined
+              }
+              type="text"
+              href="/about"
+              onClick={onClose}
+            >
+              About
+            </Button>
+          </List.Item>
+          <List.Item className={styles.listItem}>
+            <Button
+              className={
+                router.pathname == "/projects" ? styles.active : undefined
+              }
+              type="text"
+              href="/projects"
+              onClick={onClose}
+            >
+              Projects
+            </Button>
+          </List.Item>
+          <List.Item className={styles.listItem}>
+            <Button
+              className={
+                router.pathname == "/contact" ? styles.active : undefined
+              }
+              type="text"
+              href="/contact"
+              onClick={onClose}
+            >
+              Contact
+            </Button>
+          </List.Item>
         </List>
       </Drawer>
     </nav>

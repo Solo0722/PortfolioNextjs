@@ -39,15 +39,20 @@
   /* justify-content: flex-start; */
   flex-direction: column;
 }
-.list button,
+/* .list button,
 .list a {
   width: 100%;
-  display: block;
-  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1890ff;
+  margin: 30px 0;
+
+} */
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .imgContainer {
