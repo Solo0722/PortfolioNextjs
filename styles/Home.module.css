@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  
 }
 
 .main {
@@ -87,7 +88,7 @@
 @media screen and (max-width: 700px) {
   .main {
     flex-direction: column;
-    overflow: auto;
+    z-index: -100;
   }
   .imgContainer {
     position: absolute;
@@ -101,7 +102,6 @@
   }
 
   .description {
-    z-index: 100;
     width: 100%;
     /* flex-wrap: wrap; */
     /* backdrop-filter: blur(50px); */

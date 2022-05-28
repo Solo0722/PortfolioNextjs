@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.imgContainer {
+  width: 35%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgContainer img {
+  z-index: 100;
+}
+
+.imgContainer::after {
+  background-color: #1890ff;
+  content: "";
+  display: block;
+  height: 300px;
+  position: absolute;
+  top: 10px;
+  transform: rotate(7deg);
+  width: 300px;
+  z-index: 1;
+}
+
+.projectInfo {
+  width: 60%;
+}
+
+.projectInfo h2 {
+  font-weight: bold;
+}
+
+.frameworks,
+.buttonsContainer {
+  margin: 20px 0;
+}
+.frameworks button,
+.buttonsContainer button,
+.buttonsContainer a {
+  margin: 10px;
+}

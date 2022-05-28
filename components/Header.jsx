@@ -4,7 +4,7 @@ import Head from "next/head";
 const Header = ({ title }) => {
   return (
     <Head>
-      <title>{title} - Solomon Owusu-Ansah</title>
+      <title>Solomon Owusu-Ansah</title>
       <meta name="description" content="my portfolio" />
       <link rel="icon" href="/memories-Logo.png" />
     </Head>

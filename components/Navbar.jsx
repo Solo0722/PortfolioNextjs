@@ -24,42 +24,21 @@ const Navbar = () => {
         <img src="/memories-Logo.png" alt="logo" width={40} height={40} />
       </div>
       <div className={styles.menuButton}>
-        <Button icon={<MenuOutlined />} onClick={showDrawer}></Button>
+        <Button icon={<MenuOutlined />} onClick={showDrawer} type="text" />
       </div>
       <ul className={styles.navigationContainer}>
-        <Link href={"/"}>
-          <li className={router.pathname == "/" ? styles.active : undefined}>
-            Home
-          </li>
-        </Link>
-        <Link href={"/about"}>
-          <li
-            className={router.pathname == "/about" ? styles.active : undefined}
-          >
-            About
-          </li>
-        </Link>
-        <Link href={"/projects"}>
-          <li
-            className={
-              router.pathname == "/projects" ? styles.active : undefined
-            }
-          >
-            Projects
-          </li>
-        </Link>
-        <Link href={"/contact"}>
-          <li
-            className={
-              router.pathname == "/contact" ? styles.active : undefined
-            }
-          >
-            Contact
-          </li>
-        </Link>
-        {/* <Tooltip title="search">
-          <Button type="primary" shape="circle" icon={<SearchOutlined />} />
-        </Tooltip> */}
+        <li>
+          <a href={"#home"}>Home</a>
+        </li>
+        <li>
+          <a href={"#about"}>About</a>
+        </li>
+        <li>
+          <a href={"#projects"}>Projects</a>
+        </li>
+        <li>
+          <a href={"#contact"}>Contact</a>
+        </li>
       </ul>
       <Drawer
         title=""
@@ -67,51 +46,27 @@ const Navbar = () => {
         onClose={onClose}
         visible={visible}
         width={"80%"}
+        headerStyle={{ background: "#a2d9ff" }}
+        drawerStyle={{ background: "##a2d9ff" }}
       >
         <List className={styles.list}>
           <List.Item className={styles.listItem}>
-            <Button
-              className={router.pathname == "/" ? styles.active : undefined}
-              type="text"
-              href="/"
-              onClick={onClose}
-            >
+            <Button type="text" href="#home" onClick={onClose}>
               Home
             </Button>
           </List.Item>
           <List.Item className={styles.listItem}>
-            <Button
-              className={
-                router.pathname == "/about" ? styles.active : undefined
-              }
-              type="text"
-              href="/about"
-              onClick={onClose}
-            >
+            <Button type="text" href="#about" onClick={onClose}>
               About
             </Button>
           </List.Item>
           <List.Item className={styles.listItem}>
-            <Button
-              className={
-                router.pathname == "/projects" ? styles.active : undefined
-              }
-              type="text"
-              href="/projects"
-              onClick={onClose}
-            >
+            <Button type="text" href="#projects" onClick={onClose}>
               Projects
             </Button>
           </List.Item>
           <List.Item className={styles.listItem}>
-            <Button
-              className={
-                router.pathname == "/contact" ? styles.active : undefined
-              }
-              type="text"
-              href="/contact"
-              onClick={onClose}
-            >
+            <Button type="text" href="#contact" onClick={onClose}>
               Contact
             </Button>
           </List.Item>

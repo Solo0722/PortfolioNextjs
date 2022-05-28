@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import contactStyles from "../styles/Contact.module.css";
 import { Form, Input, Button, message, Space } from "antd";
 import { HiLocationMarker, HiPhone } from "react-icons/hi";
@@ -63,8 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={contactStyles.container}>
-      <Header title={"Contact"} />
+    <div className={contactStyles.container} id="contact">
       <main className={contactStyles.main}>
         <div className={contactStyles.contactInfo}>
           <h1>Get In Touch</h1>

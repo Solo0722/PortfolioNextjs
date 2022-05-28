@@ -1,5 +1,9 @@
 .container {
   padding: 0 2rem;
+  background-image: url("/wave2.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main {
@@ -68,18 +72,33 @@
   color: #1890ff;
 }
 
-.skillsContainer button {
-  margin-right: 10px;
-  margin-bottom: 10px;
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skill {
+  margin: 15px;
 }
 
 @media screen and (max-width: 768px) {
   .imgContainer {
     display: none;
   }
+  .aboutInfo {
+    width: 100%;
+  }
   .responsiveImg {
     display: block;
-    width: 70%;
+    width: 200px;
     margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .skills {
   }
 }
