@@ -41,13 +41,12 @@ const Navbar = () => {
         </li>
       </ul>
       <Drawer
-        title=""
         placement="right"
         onClose={onClose}
         visible={visible}
         width={"80%"}
         headerStyle={{ background: "#a2d9ff" }}
-        drawerStyle={{ background: "##a2d9ff" }}
+        drawerStyle={{ background: "#a2d9ff" }}
       >
         <List className={styles.list}>
           <List.Item className={styles.listItem}>

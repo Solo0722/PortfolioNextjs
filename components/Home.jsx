@@ -17,7 +17,7 @@ export default function Home() {
     <div className={styles.container} id="home">
       <main className={styles.main}>
         <div className={styles.description}>
-          <p style={{ color: "ActiveCaption" }}>Hòla,</p>
+          <p style={{ color: "#000" }}>Hòla,</p>
           <h2>
             I&#39;m <span style={{ color: "#1890FF" }}>Solomon</span>{" "}
             Owusu-Ansah
