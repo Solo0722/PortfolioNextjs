@@ -6,7 +6,7 @@ const ProjectOne = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
-        <Image src={"/notes.png"} width={300} height={300} alt={"notes"} />
+        <Image src={"/Solocards.png"} width={300} height={300} alt={"notes"} />
       </div>
       <div className={styles.projectInfo}>
         <h2>SoloCards</h2>
