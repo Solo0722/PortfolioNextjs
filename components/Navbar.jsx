@@ -37,7 +37,9 @@ const Navbar = () => {
   return (
     <nav
       className={styles.navContainer}
-      style={{ background: `${navbar ? "#fff" : "transparent"}` }}
+      style={{
+        backdropFilter: `${navbar ? "blur(10px)" : "blur(0px)"}`,
+      }}
     >
       <div className={styles.imgContainer}>
         <img src="/memories-Logo.png" alt="logo" width={40} height={40} />
