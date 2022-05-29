@@ -4,12 +4,13 @@ import { useRouter } from "next/router";
 import { FiMenu } from "react-icons/fi";
 import { Button, Drawer, List } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const router = useRouter();
 
   const [visible, setVisible] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   const showDrawer = () => {
     setVisible(true);
   };
@@ -18,8 +19,26 @@ const Navbar = () => {
   };
   // console.log(router.pathname);
 
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 66) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackground();
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground);
+  });
+
   return (
-    <nav className={styles.navContainer}>
+    <nav
+      className={styles.navContainer}
+      style={{ background: `${navbar ? "#fff" : "transparent"}` }}
+    >
       <div className={styles.imgContainer}>
         <img src="/memories-Logo.png" alt="logo" width={40} height={40} />
       </div>
