@@ -4,7 +4,7 @@ import Head from "next/head";
 const Header = ({ title }) => {
   return (
     <Head>
-      <title>Solomon Owusu-Ansah</title>
+      <title>Solomon Owusu-Ansah | FullStack Developer</title>
       <meta name="description" content="my portfolio" />
       <link rel="icon" href="/memories-Logo.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
