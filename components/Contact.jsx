@@ -1,6 +1,6 @@
 import contactStyles from "../styles/Contact.module.css";
 import { Form, Input, Button, message, Space } from "antd";
-import { HiLocationMarker, HiPhone } from "react-icons/hi";
+import { HiLocationMarker, HiPhone, HiHeart } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 import { send } from "emailjs-com";
 import { useState } from "react";
@@ -83,13 +83,16 @@ const Contact = () => {
               <MdEmail /> owusuansahsolomon39@gmail.com
             </p>
             <p>
-              <Button>Hire me</Button>
+              <Button type="ghost">Hire me</Button>
             </p>
-            <p>
-              <a href="#" target="_blank">
-                Buy me a coffee
-              </a>
-            </p>
+            <Button
+              icon={<HiHeart style={{ marginRight: "10px" }} />}
+              type="primary"
+              href="https://www.buymeacoffee.com/owusuansah0"
+              target="_blank"
+            >
+              Buy me a coffee
+            </Button>
           </div>
         </div>
         <div className={contactStyles.formContainer}>
