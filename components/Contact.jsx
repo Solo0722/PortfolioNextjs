@@ -82,9 +82,7 @@ const Contact = () => {
             <p>
               <MdEmail /> owusuansahsolomon39@gmail.com
             </p>
-            <p>
-              <Button type="ghost">Hire me</Button>
-            </p>
+           
             <Button
               icon={<HiHeart style={{ marginRight: "10px" }} />}
               type="primary"

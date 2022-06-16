@@ -1,39 +1,32 @@
-import { Button } from "antd";
+import { Button, Card } from "antd";
 import Image from "next/image";
 import styles from "../../styles/ProjectOne.module.css";
 
-const ProjectOne = () => {
+const ProjectOne = ({ project }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.imgContainer}>
-        <Image src={"/Solocards1.png"} width={300} height={300} alt={"notes"} />
+    <Card
+      hoverable
+      style={{
+        width: "350px",
+        margin: "30px",
+        minHeight: "370px",
+        position: "relative",
+      }}
+      cover={<img src={project.image} style={{ height: "170px" }} />}
+    >
+      <Card.Meta title={project.title} description={project.description} />
+      <div className={styles.buttonsContainer}>
+        <Button
+          type="primary"
+          href={project.url}
+          target="_blank"
+          size={"small"}
+        >
+          Visit
+        </Button>
+        <Button type="link" size="small">View Code</Button>
       </div>
-      <div className={styles.projectInfo}>
-        <h2>SoloCards</h2>
-        <p>A flashcards application for students, created with NextJS</p>
-        <div className={styles.frameworks}>
-          <Button type="dashed" size="large">
-            NextJS
-          </Button>
-          <Button type="dashed" size="large">
-            Ant Design
-          </Button>
-        </div>
-        <div className={styles.buttonsContainer}>
-          <Button
-            type="primary"
-            size="large"
-            href="https://solocards.vercel.app"
-            target="_blank"
-          >
-            Visit
-          </Button>
-          <Button type="primary" size="large">
-            View Code
-          </Button>
-        </div>
-      </div>
-    </div>
+    </Card>
   );
 };
 

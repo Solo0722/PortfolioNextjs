@@ -2,8 +2,9 @@ import styles from "../styles/NavbarStyles.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FiMenu } from "react-icons/fi";
-import { Button, Drawer, List } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
+import { Button, Drawer, List, Tooltip } from "antd";
+import { FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { CloseCircleOutlined, MenuOutlined } from "@ant-design/icons";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -64,6 +65,7 @@ const Navbar = () => {
       <Drawer
         placement="right"
         onClose={onClose}
+        closeIcon={<CloseCircleOutlined />}
         visible={visible}
         width={"80%"}
         headerStyle={{ background: "#a2d9ff" }}
@@ -91,6 +93,48 @@ const Navbar = () => {
             </Button>
           </List.Item>
         </List>
+        <div className={styles.socialLinks}>
+          <Tooltip title="facebook">
+            <Button
+              type="ghost"
+              shape="round"
+              style={{ marginLeft: "10px" }}
+              icon={<FaFacebookF size={"10px"} />}
+              href={"https://www.facebook.com/profile.php?id=100078916464796"}
+              target="_blank"
+            />
+          </Tooltip>
+          <Tooltip title="twitter">
+            <Button
+              type="ghost"
+              shape="round"
+              style={{ marginLeft: "10px" }}
+              icon={<FaTwitter size={"10px"} />}
+              href={"https://www.twitter.com/@KhobbySolo"}
+              target="_blank"
+            />
+          </Tooltip>
+          <Tooltip title="linkedin">
+            <Button
+              type="ghost"
+              shape="round"
+              style={{ marginLeft: "10px" }}
+              icon={<FaLinkedinIn size={"10px"} />}
+              href={"https://www.linkedin.com/in/solomon-owusu-ansah-a68668223"}
+              target="_blank"
+            />
+          </Tooltip>
+          <Tooltip title="github">
+            <Button
+              type="ghost"
+              shape="round"
+              style={{ marginLeft: "10px" }}
+              icon={<FaGithub size={"10px"} />}
+              href={"https://www.github.com/solo0722"}
+              target="_blank"
+            />
+          </Tooltip>
+        </div>
       </Drawer>
     </nav>
   );

@@ -95,6 +95,17 @@
   background-color: rgb(13, 13, 18);
 }
 
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+/* .socialLinks button {
+  margin-left: 20px;
+} */
+
 @media screen and (max-width: 768px) {
   .navContainer {
     z-index: 100;
