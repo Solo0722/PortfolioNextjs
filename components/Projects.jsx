@@ -27,8 +27,8 @@ const Projects = () => {
       <main className={projectStyles.main}>
         <h1>Projects I have done</h1>
         <div className={projectStyles.projectsContainer}>
-          {PROJECTS.map((PROJECT) => (
-            <ProjectOne project={PROJECT} />
+          {PROJECTS.map((PROJECT, index) => (
+            <ProjectOne project={PROJECT} key={index} />
           ))}
         </div>
       </main>
