@@ -30,9 +30,9 @@ export default function Home() {
                 Download Resume
               </a>
             </Button>
-            <Button type="ghost" onClick={() => openNotification("topRight")}>
+            {/* <Button type="ghost" onClick={() => openNotification("topRight")}>
               Need a website?
-            </Button>
+            </Button> */}
           </div>
           <div className={styles.socialLinks}>
             <Tooltip title="facebook">

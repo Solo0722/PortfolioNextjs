@@ -4,10 +4,18 @@ import ProjectOne from "./Projects/ProjectOne";
 
 const PROJECTS = [
   {
+    title: "Streamline",
+    description:
+      "A mernstack blog application (my personal favorite) with PWA features",
+    image: "/streamlinehomepage.png",
+    frameworks: ["ReactJS", "MongoDB", "NodeJS", "Ant Design"],
+    url: "https://streamline-khaki.vercel.app",
+  },
+  {
     title: "Solocards",
     description:
-      "A fullstack flashcards progressive web application for students, created with NextJS",
-    image: "/Solocards1.png",
+      "A fullstack flashcards progressive web application for students",
+    image: "/solocardshomepage.png",
     frameworks: ["NextJS", "MongoDB", "NodeJS", "Ant Design"],
     url: "https://solocards.vercel.app",
   },
