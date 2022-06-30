@@ -4,6 +4,7 @@ import { HiLocationMarker, HiPhone, HiHeart } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 import { send } from "emailjs-com";
 import { useState } from "react";
+import { CoffeeOutlined } from "@ant-design/icons";
 // import { message, Button, Space } from "antd";
 
 const Contact = () => {
@@ -84,7 +85,7 @@ const Contact = () => {
             </p>
            
             <Button
-              icon={<HiHeart style={{ marginRight: "10px" }} />}
+              icon={<CoffeeOutlined style={{ marginRight: "10px" }} />}
               type="primary"
               href="https://www.buymeacoffee.com/owusuansah0"
               target="_blank"

@@ -1,7 +1,7 @@
 .container {
   min-height: 60px;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
   display: flex;
   align-items: center;

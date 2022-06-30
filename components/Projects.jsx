@@ -22,11 +22,13 @@ const PROJECTS = [
   {
     title: "JadeonEats",
     description:
-      "A Mernstack food delivery website made with React and Ant Design",
+      "A mernstack food delivery website made with React and Ant Design",
     image: "/jadeoneats.png",
     frameworks: ["ReactJS", "MongoDB", "NodeJS", "Ant Design"],
     url: "https://jadeoneats.vercel.app",
   },
+  
+ 
 ];
 
 const Projects = () => {

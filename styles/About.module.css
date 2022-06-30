@@ -103,4 +103,7 @@
   }
   .skills {
   }
+  .skill {
+    margin: 10px;
+  }
 }
