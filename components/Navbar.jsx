@@ -100,7 +100,7 @@ const Navbar = () => {
           <List.Item className={styles.listItem}>
             <Button
               type="text"
-              href="http://streamline-khaki.vercel.app"
+              href="https://streamline-khaki.vercel.app"
               target="_blank"
               onClick={onClose}
             >
