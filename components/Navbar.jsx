@@ -62,7 +62,11 @@ const Navbar = () => {
           <a href={"#contact"}>Contact</a>
         </li>
         <li>
-          <a href={"https://streamline-khaki.vercel.app"} target="_blank">
+          <a
+            href={"https://streamline-khaki.vercel.app"}
+            target="_blank"
+            rel="noreferrer"
+          >
             Blog
           </a>
         </li>
@@ -102,6 +106,7 @@ const Navbar = () => {
               type="text"
               href="https://streamline-khaki.vercel.app"
               target="_blank"
+              rel="noreferrer"
               onClick={onClose}
             >
               Blog
