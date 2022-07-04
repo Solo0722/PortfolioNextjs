@@ -4,9 +4,17 @@ import ProjectOne from "./Projects/ProjectOne";
 
 const PROJECTS = [
   {
+    title: "Twizzle",
+    description:
+      "A fullstack image sharing social media platform,backend managed with Sanity.io",
+    image: "/streamlinehomepage.png",
+    frameworks: ["ReactJS", "Sanity.io", "Ant Design"],
+    url: "https://twizzle-a25fe.web.app",
+  },
+  {
     title: "Streamline",
     description:
-      "A mernstack blog application (my personal favorite) with PWA features",
+      "A mernstack blog application  with PWA features",
     image: "/streamlinehomepage.png",
     frameworks: ["ReactJS", "MongoDB", "NodeJS", "Ant Design"],
     url: "https://streamline-khaki.vercel.app",
@@ -27,8 +35,6 @@ const PROJECTS = [
     frameworks: ["ReactJS", "MongoDB", "NodeJS", "Ant Design"],
     url: "https://jadeoneats.vercel.app",
   },
-  
- 
 ];
 
 const Projects = () => {
