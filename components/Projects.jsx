@@ -7,7 +7,7 @@ const PROJECTS = [
     title: "Twizzle",
     description:
       "A fullstack image sharing social media platform,backend managed with Sanity.io",
-    image: "/streamlinehomepage.png",
+    image: "/twizzle.png",
     frameworks: ["ReactJS", "Sanity.io", "Ant Design"],
     url: "https://twizzle-a25fe.web.app",
   },
