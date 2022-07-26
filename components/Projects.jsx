@@ -12,13 +12,14 @@ const PROJECTS = [
     url: "https://twizzle-a25fe.web.app",
   },
   {
-    title: "Streamline",
+    title: "Ripple",
     description:
-      "A mernstack blog application  with PWA features",
-    image: "/streamlinehomepage.png",
-    frameworks: ["ReactJS", "MongoDB", "NodeJS", "Ant Design"],
-    url: "https://streamline-khaki.vercel.app",
+      "A fullstack e-commerce application, content managed with commercejs",
+    image: "/ripple.png",
+    frameworks: ["NextJS", "CommerceJs", "Ant Design"],
+    url: "https://ripple-sigma.vercel.app",
   },
+
   {
     title: "Solocards",
     description:
@@ -34,6 +35,13 @@ const PROJECTS = [
     image: "/jadeoneats.png",
     frameworks: ["ReactJS", "MongoDB", "NodeJS", "Ant Design"],
     url: "https://jadeoneats.vercel.app",
+  },
+  {
+    title: "Streamline",
+    description: "A mernstack blog application  with PWA features",
+    image: "/streamlinehomepage.png",
+    frameworks: ["ReactJS", "MongoDB", "NodeJS", "Ant Design"],
+    url: "https://streamline-khaki.vercel.app",
   },
 ];
 

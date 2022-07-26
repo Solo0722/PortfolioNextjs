@@ -61,15 +61,6 @@ const Navbar = () => {
         <li>
           <a href={"#contact"}>Contact</a>
         </li>
-        <li>
-          <a
-            href={"https://streamline-khaki.vercel.app"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Blog
-          </a>
-        </li>
       </ul>
       <Drawer
         placement="right"
@@ -99,17 +90,6 @@ const Navbar = () => {
           <List.Item className={styles.listItem}>
             <Button type="text" href="#contact" onClick={onClose}>
               Contact
-            </Button>
-          </List.Item>
-          <List.Item className={styles.listItem}>
-            <Button
-              type="text"
-              href="https://streamline-khaki.vercel.app"
-              target="_blank"
-              rel="noreferrer"
-              onClick={onClose}
-            >
-              Blog
             </Button>
           </List.Item>
         </List>

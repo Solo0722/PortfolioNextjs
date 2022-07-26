@@ -1,6 +1,7 @@
 import { GithubFilled } from "@ant-design/icons";
 import { Button, Card } from "antd";
-import Image from "next/image";
+import { BsFillArrowUpRightCircleFill, BsArrowUpRight } from "react-icons/bs";
+
 import styles from "../../styles/ProjectOne.module.css";
 
 const ProjectOne = ({ project }) => {
@@ -17,13 +18,8 @@ const ProjectOne = ({ project }) => {
     >
       <Card.Meta title={project.title} description={project.description} />
       <div className={styles.buttonsContainer}>
-        <Button
-          type="link"
-          href={project.url}
-          target="_blank"
-          size={"small"}
-        >
-          Visit
+        <Button type="link" href={project.url} target="_blank">
+          Visit site
         </Button>
         <Button type="text" size="large" icon={<GithubFilled />}></Button>
       </div>
